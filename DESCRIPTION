@@ -1,0 +1,19 @@
+Package: datasummariser
+Type: Package
+Title: Summarises Data
+Version: 0.1.0
+Authors@R: person("Marvin KH", "Law", email = "marvin.law@sydney.edu.au",
+  role = c("aut", "cre"))
+Description: Functions developed for easy processing from tidy data to presentable and easily understandable analysis output. These include descriptive statistcs, t-tests, correlations, and factor analyses.
+Imports: 
+  tidyverse, 
+  lsr, 
+  rlang, 
+  knitr, 
+  kableExtra,
+  psych,
+  broom
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
