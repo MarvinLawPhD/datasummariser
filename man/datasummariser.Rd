@@ -8,13 +8,21 @@
 The datasummariser package current provides two important functions:
 }
 \details{
-Tidy en-mass analyses and determining issues within data
+1. Tidy en-mass analyses with p-value significance results
+2. Producing well-formatted tables when knitting to PDF in Rmarkdown
 }
 \section{datasummariser functions}{
 
-mass_ttest and thresholdchecker
 }
 
 \seealso{
-\code{\link{thresholdcheck}} and \code{\link{mass_ttest}}
+\code{\link{mass_ttest}}
+
+\code{\link{thresholdcheck}}
+
+\code{\link{efasummariser}}
+
+\code{\link{corsig}}
+
+\code{\link{beautifytable}}
 }

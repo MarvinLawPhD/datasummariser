@@ -1,7 +1,7 @@
 Package: datasummariser
 Type: Package
 Title: Summarises Data
-Version: 0.1.0
+Version: 0.1.1
 Authors@R: person("Marvin KH", "Law", email = "marvin.law@sydney.edu.au",
   role = c("aut", "cre"))
 Description: Functions developed for easy processing from tidy data to presentable and easily understandable analysis output. These include descriptive statistcs, t-tests, correlations, and factor analyses.

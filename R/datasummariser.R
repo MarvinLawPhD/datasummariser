@@ -2,12 +2,15 @@
 #'
 #' The datasummariser package current provides two important functions:
 #'
-#' Tidy en-mass analyses and determining issues within data
-#'
+#' 1. Tidy en-mass analyses with p-value significance results
+#' 2. Producing well-formatted tables when knitting to PDF in Rmarkdown
 #' @section datasummariser functions:
-#' mass_ttest and thresholdchecker
-#'
+#' @seealso \code{\link{mass_ttest}}
+#' @seealso \code{\link{thresholdcheck}}
+#' @seealso \code{\link{efasummariser}}
+#' @seealso \code{\link{corsig}}
+#' @seealso \code{\link{beautifytable}}
 #' @docType package
 #' @name datasummariser
-#' @seealso \code{\link{thresholdcheck}} and \code{\link{mass_ttest}}
+#'
 NULL
