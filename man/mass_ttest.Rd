@@ -24,7 +24,6 @@ Runs t-test results between two groups for multiple variables
 \examples{
 mass_ttest(mtcars, vs, c("cyl", "mpg"))
 mass_ttest(mtcars, vs, c("cyl", "mpg"), var.equal = TRUE)
-
 }
 \seealso{
 \code{\link{thresholdcheck}}

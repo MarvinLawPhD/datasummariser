@@ -19,11 +19,11 @@ beautifytable(.data, caption, size = 7, width = "3in")
 Output in Rmarkdown following pdf knit
 }
 \description{
-This function beautifies tables for Rmarkdown pdf outputs.
+This function beautifies tables for Rmarkdown pdf outputs
 }
 \examples{
 irisflowers <- iris \%>\%
-                 group_by(Species) \%>\%
-                 summarise(n = n())
+  group_by(Species) \%>\%
+  summarise(n = n())
 beautifytable(irisflowers, "Flower Count")
 }

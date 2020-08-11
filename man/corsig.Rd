@@ -4,7 +4,7 @@
 \alias{corsig}
 \title{corsig}
 \usage{
-corsig(.data, decimals = 2, method = "pearson", numbered = F)
+corsig(.data, decimals = 2, method = "pearson", numbered = T)
 }
 \arguments{
 \item{.data}{a dataframe or matrix with numeric values}
@@ -24,7 +24,10 @@ significance based on p-values in a table
 }
 \examples{
 irisnum <- iris \%>\%
-             select_if(is.numeric)
+  select_if(is.numeric)
 corsig(irisnum, decimals = 3, method = "kendall", numbered = T)
 corsig(irisnum, decimals = 2, method = "pearson", numbered = F)
+
+
+
 }

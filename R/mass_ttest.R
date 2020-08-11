@@ -11,20 +11,21 @@
 #' @examples
 #' mass_ttest(mtcars, vs, c("cyl", "mpg"))
 #' mass_ttest(mtcars, vs, c("cyl", "mpg"), var.equal = TRUE)
-#'
 #' @seealso \code{\link{thresholdcheck}}
-mass_ttest <- function(.data, x, y, ...){
-
+mass_ttest <- function(.data, x, y, ...) {
   x <- enquo(x)
   .y <- syms(y)
 
   d <- .data %>% mutate(!!x := as_factor(!!x))
-  a <- d %>% filter(as.numeric(!!x) == 1) %>% select(!!!.y)
-  b <- d %>% filter(as.numeric(!!x) == 2) %>% select(!!!.y)
+  a <- d %>%
+    filter(as.numeric(!!x) == 1) %>%
+    select(!!!.y)
+  b <- d %>%
+    filter(as.numeric(!!x) == 2) %>%
+    select(!!!.y)
   df <- tibble()
 
-  for (i in 1:length(.y)){
-
+  for (i in 1:length(.y)) {
     dd <- t.test(a[i], b[i], ...) %>%
       tidy()
     dd$cohens <- cohensD(a[i] %>% unlist(), b[i] %>% unlist())
@@ -37,4 +38,3 @@ mass_ttest <- function(.data, x, y, ...){
     select(variable, everything())
   return(df)
 }
-

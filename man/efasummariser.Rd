@@ -21,15 +21,16 @@ This function should be used either with a single EFA or with EFAs on the same v
 }
 \examples{
 setosa <- psych::fa(iris \%>\%
-                      filter(Species == "setosa") \%>\%
-                      select_if(is.numeric),
-                    fm = "gls")
+  filter(Species == "setosa") \%>\%
+  select_if(is.numeric),
+fm = "gls"
+)
 
 versicolor <- psych::fa(iris \%>\%
-                          filter(Species == "versicolor") \%>\%
-                          select_if(is.numeric),
-                        fm = "gls")
+  filter(Species == "versicolor") \%>\%
+  select_if(is.numeric),
+fm = "gls"
+)
 
 efa_loadings(threshold = 0.3, setosa, versicolor)
-
 }
